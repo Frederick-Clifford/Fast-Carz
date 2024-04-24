@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    body {
+        @apply md:mx-16 lg:mx-24 xl:mx-36
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply text-black font-lilita
+    }
+    
+    p, li {
+        @apply text-black font-kalam
+    }
+
+    a, button {
+        @apply text-white font-crimson-pro
+    }
+
+}
+
+@layer components {
+
+    .container-margin {
+        @apply mt-[72px] mb-4
+    }
+
+    .nav-bar {
+        @apply md:rounded-bl-lg md:rounded-br-lg md:mx-16 lg:mx-24 xl:mx-36
+    }
+
+    .nav-bar-text {
+        @apply text-[23px] text-white font-oleo-script
+    }
+
+    .title-text {
+        @apply text-white text-[30px] ss:text-[33px] md:text-[35px]
+    }
+
+    .subject-text {
+        @apply text-white text-[15px] ss:text-[18px] md:text-[20px]
+    }
+
+    .bg-text-text-shadow {
+        text-shadow: 1.5px 1.5px 1px black;
+    }
+
+    .card-text {
+        @apply text-[13px] p-1 truncate
+    }
+
+    .rounded-button {
+        @apply py-1 px-4 rounded-full text-[17px] bg-primary-color hover:bg-primary-color-dark
+    }
+
+    .car-review-button {
+        @apply underline py-1 px-3 rounded-xl text-[17px] hover:bg-blue-100 hover:text-primary-color-dark text-primary-color flex gap-2 justify-center items-center
+    }
+
+    .car-review-title-text {
+        @apply text-[21px] ss:text-[23px] md:text-[25px]
+    }
+
+    .car-review-subtitle-text {
+        @apply text-[16px] ss:text-[17px] md:text-[18px]
+    }
+
+    .car-review-subject-text {
+        @apply text-[15px] ss:text-[16px] md:text-[17px]
+    }
+
+    .car-review-large-image {
+        @apply w-[310px] h-[210px] xs:w-[380px] xs:h-[230px] ss:w-[450px] ss:h-[290px] sm:w-[520px] sm:h-[370px] md:w-[590px] md:h-[450px] rounded-lg object-cover object-center
+    }
+
+    .car-review-medium-image {
+        @apply w-[260px] h-[160px] xs:w-[330px] xs:h-[180px] ss:w-[400px] ss:h-[240px] sm:w-[470px] sm:h-[320px] md:w-[540px] md:h-[400px] rounded-lg object-cover object-center
+    }
+
+    .small-icon {
+        @apply w-[20px] h-[20px] object-contain
+    }
+
+    .search-error-image {
+        @apply w-[200px] h-[200px] object-contain
+    }
+
+}
