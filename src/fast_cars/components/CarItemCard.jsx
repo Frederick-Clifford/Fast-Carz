@@ -21,7 +21,7 @@ const CarItemCard = ({id, name, image}) => {
 
                 <Link className="rounded-button"
                     reloadDocument
-                    to={`/car/${id}`}>
+                    to={`/Fast-Carz/car/${id}`}>
                     {HOME_CARD_BUTTON_TEXT}
                 </Link>
             </div>
