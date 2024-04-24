@@ -16,6 +16,11 @@ function App() {
     },
 
     {
+      path: "/Fast-Carz",
+      element: <HomePage />
+    },
+
+    {
       path: "/car",
       element: <HomePage />
     },
