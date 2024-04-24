@@ -5,7 +5,6 @@ import HomePage from "./fast_cars/web_pages/HomePage"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 import EmptyCar from "./fast_cars/components/EmptyCar"
-import RedirectPage from "./fast_cars/web_pages/RedirectPage"
 
 function App() {
 
@@ -34,6 +33,9 @@ function App() {
 
   ],
 
+  {
+    basename: "/Fast-Carz/"
+  }
   
 )
 
