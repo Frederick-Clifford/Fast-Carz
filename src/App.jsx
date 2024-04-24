@@ -12,7 +12,7 @@ function App() {
     [
     
     {
-      path: "/Fast-Carz",
+      path: "/",
       element: <HomePage />
     },
 
@@ -33,7 +33,7 @@ function App() {
   ],
 
   {
-    basename: "/Fast-Carz"
+    basename: "/Fast-Carz/"
   }
 )
 
