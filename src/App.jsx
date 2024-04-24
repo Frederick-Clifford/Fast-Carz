@@ -13,23 +13,28 @@ function App() {
     
     {
       path: "/",
-      element: <HomePage />
+      element: <HomePage />,
+      children: [
+
+        {
+          path: "/car",
+          element: <HomePage />
+        },
+
+        {
+          path: "/car/:carId",
+          element: <CarPage />
+        },
+
+        {
+          path: "*",
+          element: <EmptyCar />
+        }
+
+      ]
+
     },
 
-    {
-      path: "/Fast-Carz/car",
-      element: <HomePage />
-    },
-
-    {
-      path: "/Fast-Carz/car/:carId",
-      element: <CarPage />
-    },
-
-    {
-      path: "/Fast-Carz/*",
-      element: <EmptyCar />
-    }
   ],
 
   {
