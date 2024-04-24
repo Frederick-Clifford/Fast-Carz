@@ -14,25 +14,24 @@ function App() {
     {
       path: "/",
       element: <HomePage />,
-      children: [
+    },
 
-        {
-          path: "/car",
-          element: <HomePage />
-        },
+    {
+      path: "/car",
+      element: <HomePage />,
+      basename: "/Fast-Carz/"
+    },
 
-        {
-          path: "/car/:carId",
-          element: <CarPage />
-        },
+    {
+      path: "/car/:carId",
+      element: <CarPage />,
+      basename: "/Fast-Carz/"
+    },
 
-        {
-          path: "*",
-          element: <EmptyCar />
-        }
-
-      ]
-
+    {
+      path: "*",
+      element: <EmptyCar />,
+      basename: "/Fast-Carz/"
     },
 
   ],
