@@ -17,17 +17,17 @@ function App() {
     },
 
     {
-      path: "/car",
+      path: "/Fast-Carz/car",
       element: <HomePage />
     },
 
     {
-      path: "/car/:carId",
+      path: "/Fast-Carz/car/:carId",
       element: <CarPage />
     },
 
     {
-      path: "*",
+      path: "/Fast-Carz/*",
       element: <EmptyCar />
     }
   ],
