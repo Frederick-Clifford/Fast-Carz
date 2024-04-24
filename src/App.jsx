@@ -8,13 +8,9 @@ import EmptyCar from "./fast_cars/components/EmptyCar"
 
 function App() {
 
-  const router = createBrowserRouter([
+  const router = createBrowserRouter(
+    [
     
-    {
-      path: "/",
-      element: <HomePage />
-    },
-
     {
       path: "/Fast-Carz",
       element: <HomePage />
@@ -34,7 +30,12 @@ function App() {
       path: "*",
       element: <EmptyCar />
     }
-  ])
+  ],
+
+  {
+    basename: "/Fast-Carz"
+  }
+)
 
   return (
     
