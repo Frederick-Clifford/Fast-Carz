@@ -5,6 +5,7 @@ import HomePage from "./fast_cars/web_pages/HomePage"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 import EmptyCar from "./fast_cars/components/EmptyCar"
+import RedirectPage from "./fast_cars/web_pages/RedirectPage"
 
 function App() {
 
@@ -18,27 +19,22 @@ function App() {
 
     {
       path: "/car",
-      element: <HomePage />,
-      basename: "/Fast-Carz/"
+      element: <HomePage />
     },
 
     {
       path: "/car/:carId",
-      element: <CarPage />,
-      basename: "/Fast-Carz/"
+      element: <CarPage />
     },
 
     {
       path: "*",
-      element: <EmptyCar />,
-      basename: "/Fast-Carz/"
+      element: <RedirectPage />
     },
 
   ],
 
-  {
-    basename: "/Fast-Carz/"
-  }
+  
 )
 
   return (
