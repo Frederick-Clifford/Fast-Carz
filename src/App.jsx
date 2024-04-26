@@ -2,7 +2,7 @@ import NavBar from "./fast_cars/components/NavBar"
 import CarPage from "./fast_cars/web_pages/CarPage"
 import HomePage from "./fast_cars/web_pages/HomePage"
 
-import { createHashRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom"
 
 import EmptyCar from "./fast_cars/components/EmptyCar"
 
